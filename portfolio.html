@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modugula Usha Subha Keerthi Reddy - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(to right, #e0f7fa, #e1bee7); /* pastel gradient */
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
+    }
+
+    .profile-section {
+      background: #2c3e50;
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #3498db;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      border: 4px solid white;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 16px;
+      color: #ecf0f1;
+      margin-bottom: 30px;
+    }
+
+    .contact-info {
+      text-align: left;
+    }
+
+    .contact-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 5px;
+    }
+
+    .contact-label {
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    .education-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    .education-table th,
+    .education-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    .education-table th {
+      background-color: #3498db;
+      color: white;
+    }
+
+    .education-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .skills-list {
+      list-style: none;
+    }
+
+    .skills-list li {
+      padding: 10px;
+      margin-bottom: 8px;
+      background: #ecf0f1;
+      border-left: 4px solid #3498db;
+      border-radius: 3px;
+    }
+
+    .skills-list.negatives li {
+      border-left-color: #e74c3c;
+    }
+
+    .achievements-box {
+      background: #f0f9f1;
+      border: 2px solid #4caf50;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .achievement-item {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .achievement-item:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 20px;
+      }
+
+      .skills-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        font-size: 48px;
+      }
+
+      .name {
+        font-size: 20px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-section">
+      <div class="profile-image">👩‍💻</div>
+      <h1 class="name">Modugula Usha Subha Keerthi Reddy</h1>
+      <p class="title">Aspiring Web Developer</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">📍 Location:</span><br>
+          Andhra Pradesh, India
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">📞 Phone:</span><br>
+          +91 9811462854
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">📧 Email:</span><br>
+          usha@example.com
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">🌐 LinkedIn:</span><br>
+          <a href="https://www.linkedin.com/in/usha-subha/" style="color: #3498db;">LinkedIn Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <table class="education-table">
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Year</th>
+              <th>Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B.Tech - CSE</td>
+              <td>Vignan University</td>
+              <td>2023 - 2027</td>
+              <td>81%</td>
+            </tr>
+            <tr>
+              <td>Intermediate</td>
+              <td>Viveka Junior College</td>
+              <td>2021 - 2023</td>
+              <td>92%</td>
+            </tr>
+            <tr>
+              <td>SSC</td>
+              <td>Vijetha Vidayalam</td>
+              <td>2019 - 2020</td>
+              <td>95%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">My Strengths & Areas for Growth</h2>
+        <div class="skills-container">
+          <div>
+            <h3 style="color: #27ae60; margin-bottom: 15px;">Strengths</h3>
+            <ol class="skills-list">
+              <li>Problem Solving</li>
+              <li>Team Collaboration</li>
+              <li>Time Management</li>
+              <li>Adaptability</li>
+            </ol>
+          </div>
+          <div>
+            <h3 style="color: #e74c3c; margin-bottom: 15px;">Growth Areas</h3>
+            <ul class="skills-list negatives">
+              <li>Overthinking</li>
+              <li>Stage Fear</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievements-box">
+          <div class="achievement-item">🏆 Winner - CodeFest 2024</div>
+          <div class="achievement-item">🌐 Created a personal portfolio website</div>
+          <div class="achievement-item">📜 Python & Web Dev Certified by NPTEL</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
